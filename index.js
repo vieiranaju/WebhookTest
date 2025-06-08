@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.json())
 
-app.post('/events', (req, res) => {
+app.post('/', (req, res) => {
   console.log('Webhook recebido:')
   console.log(req.body)
   res.sendStatus(200)
